@@ -51,12 +51,16 @@ public class UserRegistration {
 		System.out.println("Password : ");
 		String pwd = SC.next();
 		boolean pwd1 = Pattern.matches("^([0-9a-zA-Z@#!]){8,}$", pwd);
-		if(pwd1 == true)
-			System.out.println("Password1 Matched");
-		else
+		boolean pwd2 = Pattern.matches("([a-z0-9@#!]*)[A-Z]+([a-z0-9@#!]*)$", pwd);
+		if(pwd1 == true) {
+			if(pwd2 == true) {  
+				System.out.println("Password1and2 Matched");
+			} else { 
+				System.out.println("Password1and2 Not Matched");
+			}} else {
 			System.out.println("Password1 Not Matched");
+			}
 	}
-
 	public static void main(String args[]) {
 		System.out.println("*****WELCOME TO USER REGISTRATION SYSTEM*****");
 		firstName();
