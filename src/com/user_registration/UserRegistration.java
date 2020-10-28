@@ -37,11 +37,21 @@ public class UserRegistration {
 			System.out.println("Invalid");
 	}
 
+	public static void mobileNum() {
+		System.out.println("Mobile Number : ");
+		String mobile = SC.next();
+		boolean mobileNo = Pattern.matches("^[0-9]{1,3}[[:space:]][0-9]{10}$", mobile);
+		if(mobileNo == true)
+			System.out.println("Valid");
+		else
+			System.out.println("Invalid");
+	}
 
 	public static void main(String args[]) {
 		System.out.println("*****WELCOME TO USER REGISTRATION SYSTEM*****");
 		firstName();
 		lastName();
 		email();
+		mobileNum();
 	}
 }
