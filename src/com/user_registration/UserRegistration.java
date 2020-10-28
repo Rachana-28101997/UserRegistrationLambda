@@ -47,11 +47,22 @@ public class UserRegistration {
 			System.out.println("Invalid");
 	}
 
+	public static void password() {
+		System.out.println("Password : ");
+		String pwd = SC.next();
+		boolean pwd1 = Pattern.matches("^([0-9a-zA-Z@#!]){8,}$", pwd);
+		if(pwd1 == true)
+			System.out.println("Password1 Matched");
+		else
+			System.out.println("Password1 Not Matched");
+	}
+
 	public static void main(String args[]) {
 		System.out.println("*****WELCOME TO USER REGISTRATION SYSTEM*****");
 		firstName();
 		lastName();
 		email();
 		mobileNum();
+		password();
 	}
 }
