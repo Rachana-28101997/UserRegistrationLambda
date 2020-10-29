@@ -58,29 +58,24 @@ public class UserRegistration {
 			if(pwd2 == true) {  
 				if(pwd3 == true) {
 					if(pwd4 == true) {
-						System.out.println("Rule 1,2,3 & 4 Matched");
+						System.out.println("Password 1,2,3 & 4 Matched");
 					}else {
-						System.out.println("Rule 4 Not Matched");
+						System.out.println("Password 4 Not Matched");
 					}}else {
-					System.out.println("Rule 3 Not Matched");
+					System.out.println("Password 3 Not Matched");
 				}} else { 
-				System.out.println("Rule 2 Not Matched");
+				System.out.println("Password 2 Not Matched");
 			}} else {
-			System.out.println("Rule 1 Not Matched");
+			System.out.println("Password 1 Not Matched");
 		}
 	}
 	
 	public static void main(String args[]) {
-		System.out.println("*****WELCOME TO USER REGISTRATION SYSTEM*****");
+		System.out.println("*****WELCOME TO USER REGISTRATION Problem*****");
 		firstName();
 		lastName();
 		email();
 		mobileNum();
-		System.out.println("Rules to be maintained for attaining a valid password");
-		System.out.println("Password1 : Should contain minimum of 8 characters");
-		System.out.println("Password2 : Should have atleast 1 Uppercase letter");
-		System.out.println("Password3 : Should have atleast 1 numeric number in password");
-		System.out.println("Password4 : Should contain exactly 1 special character");
 		password();
 	}
 }
