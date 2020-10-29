@@ -1,6 +1,4 @@
 package test.java.com.junitregistration;
-import static org.junit.jupiter.api.Assertions.*;
-
 import java.util.Arrays;
 import java.util.Collection;
 
